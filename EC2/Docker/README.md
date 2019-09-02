@@ -88,7 +88,7 @@ Now we are all set to run our first conatainer/app in Docker insider AWS-EC2
 
 Run below command to pull and run python training app.
 
-**[ec2-user@ip-yyy-yyy ~]$ docker run -d -p 80:5000 training/webapp:latest py**
+**[ec2-user@ip-yyy-yyy ~]$ docker run -d -p 80:5000 training/webapp:latest app.py**
 
 After successful execution of above command you can see below logs. 
 
