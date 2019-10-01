@@ -137,3 +137,9 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
 
 
  This will create a table named **user_reg_info**
+ 
+ To connect this DB using Spring Boot application refer this link.
+ 
+ https://github.com/uthircloud/aws/tree/master/RDS/app/signup
+ 
+ 
