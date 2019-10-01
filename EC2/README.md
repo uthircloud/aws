@@ -53,6 +53,6 @@ https://www.puttygen.com/
 
 To connect to EC2 instance from Windows 10 we need to refer the downlaoded key pair. Key pair contains .pem file this needs to be first converted to .ppk file.
 
-**Converting .pem file to .ppk file.
+<B>Converting .pem file to .ppk file. </B>
 
 
