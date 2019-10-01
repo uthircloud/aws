@@ -121,3 +121,4 @@ Create a User model calss to receive input request domain object.
 		   SpringApplication.run(SignupApplication.class, args);
 	  }}
 
+To generate Sample request for this application refer **UserRequestGenerator.java**
