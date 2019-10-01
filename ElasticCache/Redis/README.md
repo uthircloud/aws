@@ -18,3 +18,9 @@ We can still access Redis cache from out side of EC2 and outside of AWS throug N
 is not recommanded.
 
 Make sure you select specific region in which Redis needs to be created.
+
+To setup follow below steps.
+
+  1. Create/Launch an EC2 instance.
+  2. Create a Redis cache from Elasticcache.
+  3. Connect Redis cache from EC2 thorugh Redic-cli.
