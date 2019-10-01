@@ -86,3 +86,32 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
   ![SecurityGrpConfig](https://user-images.githubusercontent.com/50639924/65965140-1e539980-e42c-11e9-89db-dadf5143af99.PNG)
   
   <B> If you want to access the DB from anywhere change this rule to 0.0.0.0/0 </B>
+  
+  
+  ## Connect DB using SQL Client.
+  
+  In this example we are using **DBeaver** SQL Client to connect this DB. To down load this client click below link.
+  
+  https://dbeaver.io/download/
+  
+  This single client will support multiple different DB's. Once its installed in your local machine launch it.
+  Choose Oracle DB option to connect.
+  
+  Once its opened click **File->New->DBeaver->Database Connection**
+  
+  ![image](https://user-images.githubusercontent.com/50639924/65967213-40025000-e42f-11e9-996f-12b5a36ea279.png)
+  
+  ![OracleDBChooseing](https://user-images.githubusercontent.com/50639924/65967789-3200ff00-e430-11e9-9c1f-43dcf75a11b7.PNG)
+ 
+  **Give your RDS DB connection details in the Connectin page**
+  
+  <B>To connect DB we need to have ojdbc jar downloaded and referenced from local.
+     You can download this driver from below given link.
+     
+     https://mvnrepository.com/artifact/com.oracle.jdbc/ojdbc8/12.2.0.1
+  
+     Once its downloded click Edit Driver Settings and point to Oracle ojdbc jar </B>
+     
+     ![DB-info-panel](https://user-images.githubusercontent.com/50639924/65968039-991eb380-e430-11e9-86da-ed977918dac8.PNG)
+
+  
