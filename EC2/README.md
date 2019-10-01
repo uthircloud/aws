@@ -55,4 +55,24 @@ To connect to EC2 instance from Windows 10 we need to refer the downlaoded key p
 
 <B>Converting .pem file to .ppk file. </B>
 
+Once PuttyGen is downloaded execute its exe file it will launch puttygen window.
+
+![OpenPuttyGen](https://user-images.githubusercontent.com/50639924/66003076-1f5be980-e473-11e9-965e-9435e397da46.PNG)
+
+Click **File->LoadPrivate Key**
+
+Navigate to your local directory in which you have stored your .pem file of the downloaded keypair.
+
+![PrivateKeySelect](https://user-images.githubusercontent.com/50639924/66003286-a6a95d00-e473-11e9-94b6-a1b3e34a17a1.PNG)
+
+In the File Name section select box change file type to All Files this will show the .pem file from the selected directory.
+
+![Keypair-Select](https://user-images.githubusercontent.com/50639924/66003495-40710a00-e474-11e9-9010-7abfddaece59.PNG)
+
+After the file selection click open it will load the Key and show success message.When prompted click ok and Save private Key in
+your local.
+
+![KeyLoad](https://user-images.githubusercontent.com/50639924/66003568-7adaa700-e474-11e9-913b-cdd8f0481fdf.PNG)
+
+
 
