@@ -35,3 +35,11 @@ Once its launched you can see your instance.
 
 Name your instance
 ![Name-ec2](https://user-images.githubusercontent.com/50639924/66000973-8cb94b80-e46e-11e9-8632-e68f18528bb0.PNG)
+
+<B>
+When launching EC2 in this way AWS will create some default configurations. We can change this configurations as per our needs depending on type of usage of EC2.For example AWS will create default Security Group,VPC,Subnets.
+</B>
+
+
+
+
