@@ -1,5 +1,6 @@
 # Create/Launch EC2 instance
 
+## Launc EC2 instance
 LogIn to AWS account using IAM user and type EC2 in dash board search box.
 
 ![Select-EC2](https://user-images.githubusercontent.com/50639924/65999377-457d8b80-e46b-11e9-8157-295d60cd2d41.PNG)
@@ -41,5 +42,17 @@ When launching EC2 in this way AWS will create some default configurations. We c
 </B>
 
 
+## Connect to EC2 instance from Windows 10
+
+We can connect EC2 instance throuh SSH. To connect via SSH we need to have Putty and PuttyGen.This tools can be
+downloaded from below path.
+
+https://www.putty.org/
+https://www.puttygen.com/
+
+
+To connect to EC2 instance from Windows 10 we need to refer the downlaoded key pair. Key pair contains .pem file this needs to be first converted to .ppk file.
+
+**Converting .pem file to .ppk file.
 
 
