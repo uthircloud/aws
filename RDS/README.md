@@ -81,7 +81,7 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
   
   ![DB-ConfigParams](https://user-images.githubusercontent.com/50639924/65964762-95d4f900-e42b-11e9-9d36-21200fd029aa.PNG)
   
-  **By default when creating RDS DB AWS will create a deafult security rule which will allow inbound traffic only from network or system in which DB instance is getting created **
+  <B> By default when creating RDS DB AWS will create a deafult security rule which will allow inbound traffic only from network or system in which DB instance is getting created </B>
   
   ![SecurityGrpConfig](https://user-images.githubusercontent.com/50639924/65965140-1e539980-e42c-11e9-89db-dadf5143af99.PNG)
   
@@ -110,7 +110,7 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
      
      https://mvnrepository.com/artifact/com.oracle.jdbc/ojdbc8/12.2.0.1
   
- ** Once its downloded click Edit Driver Settings and point to Oracle ojdbc jar **
+ <B> Once its downloded click Edit Driver Settings and point to Oracle ojdbc jar </B>
      
   ![DB-info-panel](https://user-images.githubusercontent.com/50639924/65968039-991eb380-e430-11e9-86da-ed977918dac8.PNG)
 
