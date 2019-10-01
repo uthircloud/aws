@@ -127,10 +127,12 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
   
   ![Script-Exe](https://user-images.githubusercontent.com/50639924/65975083-1996e180-e43c-11e9-8b8d-02eb30984d75.PNG)
   
+  <B>
   CREATE TABLE ORACLETESTADMIN.user_reg_info(
     email_id   VARCHAR2(50) PRIMARY KEY,
     user_name  VARCHAR2(50) NOT NULL,
     password   VARCHAR2(50) NOT NULL
 );
+  </B>
 
  This will create a table named **user_reg_info**
