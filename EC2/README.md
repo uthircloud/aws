@@ -30,5 +30,8 @@ LogIn to AWS account using IAM user and type EC2 in dash board search box.
 
 **Once its downloaded launch instance**
 
+Once its launched you can see your instance.
+![LaunchingInstance](https://user-images.githubusercontent.com/50639924/66000790-2e8c6880-e46e-11e9-9b59-c164b2cec69c.PNG)
 
-
+Name your instance
+![Name-ec2](https://user-images.githubusercontent.com/50639924/66000973-8cb94b80-e46e-11e9-8632-e68f18528bb0.PNG)
