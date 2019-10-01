@@ -106,12 +106,12 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
   **Give your RDS DB connection details in the Connectin page**
   
   <B>To connect DB we need to have ojdbc jar downloaded and referenced from local.
-     You can download this driver from below given link.
+     You can download this driver from below given link </B>
      
      https://mvnrepository.com/artifact/com.oracle.jdbc/ojdbc8/12.2.0.1
   
-     Once its downloded click Edit Driver Settings and point to Oracle ojdbc jar </B>
+ ** Once its downloded click Edit Driver Settings and point to Oracle ojdbc jar **
      
-     ![DB-info-panel](https://user-images.githubusercontent.com/50639924/65968039-991eb380-e430-11e9-86da-ed977918dac8.PNG)
+  ![DB-info-panel](https://user-images.githubusercontent.com/50639924/65968039-991eb380-e430-11e9-86da-ed977918dac8.PNG)
 
   
