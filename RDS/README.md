@@ -76,3 +76,13 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
   **Click Create Data Base it will create DB in the slected region. This will take few minutes**
   
   ![DB-Creation](https://user-images.githubusercontent.com/50639924/65961908-8fdc1980-e425-11e9-8a69-8b90cd79e53c.PNG)
+  
+  **Once DB is created click the DB instance from Dashboard and make a note of DB instance host and port **
+  
+  ![DB-ConfigParams](https://user-images.githubusercontent.com/50639924/65964762-95d4f900-e42b-11e9-9d36-21200fd029aa.PNG)
+  
+  **By default when creating RDS DB AWS will create a deafult security rule which will allow inbound traffic only from network or system in which DB instance is getting created **
+  
+  ![SecurityGrpConfig](https://user-images.githubusercontent.com/50639924/65965140-1e539980-e42c-11e9-89db-dadf5143af99.PNG)
+  
+  <B> If you want to access the DB from anywhere change this rule to 0.0.0.0/0 </B>
