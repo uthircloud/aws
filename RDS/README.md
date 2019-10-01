@@ -116,7 +116,7 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
 
   ![JarRef](https://user-images.githubusercontent.com/50639924/65968941-f49d7100-e431-11e9-8929-5192721537ff.PNG)
   
-  ** To Connect DB instance give host name,db name,username, password **
+  <B> To Connect DB instance give host name,db name,username, password </B>
   ![DB-ConnectionConfig](https://user-images.githubusercontent.com/50639924/65971461-33352a80-e436-11e9-8f59-5519d1c5e344.PNG)
   
   **If all configurations are correct when clicking Finish will connect to DB**
