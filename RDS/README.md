@@ -118,3 +118,19 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
   
   ** To Connect DB instance give host name,db name,username, password **
   ![DB-ConnectionConfig](https://user-images.githubusercontent.com/50639924/65971461-33352a80-e436-11e9-8f59-5519d1c5e344.PNG)
+  
+  **If all configurations are correct when clicking Finish will connect to DB**
+  
+  ![DB-Creation-open](https://user-images.githubusercontent.com/50639924/65974382-dd16b600-e43a-11e9-95d9-0158c4baf229.PNG)
+  
+  Now you can create tables in this DB under **ORACLETESTADMIN** schema. To create table open a new SQL Editor and execute below  script.
+  
+  ![Script-Exe](https://user-images.githubusercontent.com/50639924/65975083-1996e180-e43c-11e9-8b8d-02eb30984d75.PNG)
+  
+  CREATE TABLE ORACLETESTADMIN.user_reg_info(
+    email_id   VARCHAR2(50) PRIMARY KEY,
+    user_name  VARCHAR2(50) NOT NULL,
+    password   VARCHAR2(50) NOT NULL
+);
+
+ This will create a table named **user_reg_info**
