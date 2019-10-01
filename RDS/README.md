@@ -19,7 +19,7 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
   
   ![RDS-Home](https://user-images.githubusercontent.com/50639924/65958278-06c0e480-e41d-11e9-975c-b440777791f2.PNG)
   
-  **Scorll down and find Create Database. **
+  **Scorll down and find Create Database **
   
   ![CreateDB](https://user-images.githubusercontent.com/50639924/65958415-54d5e800-e41d-11e9-83f3-e2bf9cffa7a4.PNG)
   
