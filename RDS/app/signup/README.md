@@ -30,7 +30,94 @@ This article give overview of connecting a Oracle Data base using Spring Boot ap
  ![Dependency](https://user-images.githubusercontent.com/50639924/65981012-3e905200-e446-11e9-9a68-59054e2ebb89.PNG)
  
  ![Generate](https://user-images.githubusercontent.com/50639924/65981241-b1013200-e446-11e9-9598-9a528fc40c78.PNG)
+ 
+  ## Application configurations and DB connection Implementation.
+  
+  Extract download project zip file and import it into your local.Application pom.xml will have following dependencies.
+  
+  **spring-boot-starter-web** -> Will give REST specific libraries.
+  **spring-boot-starter-data-jpa** -> Will give JPA specific libraries.
+  
+  We have to add **ojdbc8** jar manually as it provide driver to connect DB.
+
+  Also add **spring-boot-starter-actuator** which gives some useful endpoints for application monitoring.
+  
+    <dependency>
+			   <groupId>org.springframework.boot</groupId>
+			   <artifactId>spring-boot-starter-web</artifactId>
+	   </dependency>
+
+	   <dependency>
+			   <groupId>org.springframework.boot</groupId>
+			   <artifactId>spring-boot-starter-data-jpa</artifactId>
+	   </dependency>
    
+    <dependency>
+	     <groupId>com.oracle</groupId>
+	     <artifactId>ojdbc8</artifactId>
+	     <version>12.1.0.1</version>
+	   </dependency>
  
+    <dependency>
+			   <groupId>org.springframework.boot</groupId>
+			   <artifactId>spring-boot-starter-actuator</artifactId>
+	   </dependency>
+
+  Create a **application.properties** file with below  configuration
+
+    server.port=8081
+    server.servlet.context-path=/usersignup
+    spring.datasource.url=jdbc:oracle:thin:@//<Your RDS DB HostName>:1521/<dbname>
+    spring.datasource.username=<UserName>
+    spring.datasource.password=<Password>
+
  
+ Create a entity class name User
+ 
+     @Entity
+     @Table(name="USER_REG_INFO",schema="ORACLETESTADMIN")
+     public class User {
+
+	    @Id
+	    @Column(name="EMAIL_ID",unique=true,length=50,nullable=false)
+	    private String emailId;
+	
+    	@Column(name="USER_NAME",length=50,nullable=false)
+	    private String userName;
+	
+	    @Column(name="PASSWORD",length=50,nullable=false)
+	    private String password;
+
+Create a repository **UserSignUpRepository** which extends CrudRepository<?,?>  interface from which inherit all default DB functions.
+ 
+    @Repository
+    public interface UserSignUpRepository extends CrudRepository<User,String> {
+
+    }
+    
+Create a User model calss to receive input request domain object.
+
+    @JsonIgnoreProperties(ignoreUnknown=true)
+    @JsonInclude(value=Include.NON_NULL)
+    public class User {
+	    @JsonInclude(value=Include.NON_EMPTY)
+	    private String emailId;
+	    @JsonInclude(value=Include.NON_EMPTY)
+     private String userName;
+	    @JsonInclude(value=Include.NON_EMPTY)
+	    private String password;
+	    @JsonInclude(value=Include.NON_EMPTY)
+	    private String lastLogInTime;
+     
+  Finally create respective Controller and Service classes and bind them properly with constructor injection.
+  
+  Also in main application class **SignupApplication** make sure respective classpath scanning and Jpa repositories are configured.
+  
+     @SpringBootApplication(scanBasePackages={"com.learntech.teamtracker"}) // To scan application beans.
+     @EnableJpaRepositories(basePackages="com.learntech.teamtracker.repository") // To scan JPA repositories.
+     public class SignupApplication {
+
+	     public static void main(String[] args) {
+		   SpringApplication.run(SignupApplication.class, args);
+	  }}
 
