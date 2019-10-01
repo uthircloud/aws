@@ -77,7 +77,7 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
   
   ![DB-Creation](https://user-images.githubusercontent.com/50639924/65961908-8fdc1980-e425-11e9-8a69-8b90cd79e53c.PNG)
   
-  **Once DB is created click the DB instance from Dashboard and make a note of DB instance host and port **
+  <B>Once DB is created click the DB instance from Dashboard and make a note of DB instance host and port </B>
   
   ![DB-ConfigParams](https://user-images.githubusercontent.com/50639924/65964762-95d4f900-e42b-11e9-9d36-21200fd029aa.PNG)
   
@@ -134,5 +134,6 @@ This article will give detailed overview of Creation of RDS Oracle DB and connec
     password   VARCHAR2(50) NOT NULL
 );
   </B>
+
 
  This will create a table named **user_reg_info**
