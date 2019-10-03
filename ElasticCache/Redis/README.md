@@ -33,3 +33,27 @@ https://github.com/uthircloud/aws/blob/master/EC2/README.md
 
 When launching Redis cache in AWS by default it will run in port 6279.
 
+## 2. Create a Redis cache from Elasticcache
+
+To create Redis cache from services choose Elasticcache and choose Redis.
+
+![RedisChoose](https://user-images.githubusercontent.com/50639924/66123429-fe4ce300-e5af-11e9-8246-50c0c2b8c500.PNG)
+
+Click Create.
+
+![Create](https://user-images.githubusercontent.com/50639924/66123470-1fadcf00-e5b0-11e9-823d-1caa566cec42.PNG)
+
+Choose Redis and give name of cache.
+
+![RedisNaeme](https://user-images.githubusercontent.com/50639924/66123562-5c79c600-e5b0-11e9-8a21-64d98213ae9a.PNG)
+
+<B>Choose NodeType to t2 -> cache.t2.micro as its only eligible for free tier.</B>
+
+![NodeType](https://user-images.githubusercontent.com/50639924/66123698-a9f63300-e5b0-11e9-8d85-85041133d2a7.PNG)
+
+![FreeTier](https://user-images.githubusercontent.com/50639924/66123841-ede93800-e5b0-11e9-9317-c336e80fa129.PNG)
+
+![Save-t2-choose](https://user-images.githubusercontent.com/50639924/66123918-196c2280-e5b1-11e9-9b6c-d2217684dfc4.PNG)
+
+<B>Make sure your selecting only t2 version of Node Type as indicated above to avoid any charges.</B>
+
