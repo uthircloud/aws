@@ -29,5 +29,5 @@ To setup follow below steps.
 
 To Create/Launch an EC2 instance refer page below.
 
-https://github.com/uthircloud/aws/blob/master/EC2/README.md
+[Create/Launch EC2 instance] (https://github.com/uthircloud/aws/blob/master/EC2/README.md)
 
