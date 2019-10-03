@@ -24,3 +24,10 @@ To setup follow below steps.
   1. Create/Launch an EC2 instance.
   2. Create a Redis cache from Elasticcache.
   3. Connect Redis cache from EC2 thorugh Redic-cli.
+
+## 1. Create/Launch an EC2 instance
+
+To Create/Launch an EC2 instance refer page below.
+
+https://github.com/uthircloud/aws/blob/master/EC2/README.md
+
