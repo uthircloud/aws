@@ -62,4 +62,16 @@ In Advanced Settings create a new SubNet group. In this step you can see your ru
 
 ![AdSe](https://user-images.githubusercontent.com/50639924/66124536-a5cb1500-e5b2-11e9-91f2-0b08e02348ad.PNG)
 
-Have all other default setting as is and click Create. It will take few minutes to create.
+Have all other default setting as is and click Create. It will take few minutes to create.Once its created you can see below image in dashboard.
+
+![Available](https://user-images.githubusercontent.com/50639924/66125332-ad8bb900-e5b4-11e9-8d25-53f2eb748328.PNG)
+
+
+## 3. Connect Redis cache from EC2 thorugh Redic-cli
+
+To connect Redis Cache from EC2 instance we need to enable EC2 ingress network connection between EC2 and Redis.
+This can be done by configuring EC2 security group inbound rule to allow inbound traffic on redis port 6379.
+
+To make this configuration edit your EC2 instance securitygroup configuration and configure port 6379 with access anywhere.
+
+![Redis-Sec-grp](https://user-images.githubusercontent.com/50639924/66125232-6c93a480-e5b4-11e9-8a81-9a1121595eb1.PNG)
