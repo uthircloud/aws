@@ -105,9 +105,8 @@ If everything successful you will be connected to Redis and you can see below
 
 To check further execute few Redis commands.
 
-<B>
-set test myvalue
-get test
-flushall
+**set test myvalue**
+**get test**
+**flushall**
 </B>
 ![Commands](https://user-images.githubusercontent.com/50639924/66126752-293b3500-e5b8-11e9-9453-17734e6b782f.PNG)
