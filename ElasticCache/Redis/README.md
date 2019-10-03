@@ -31,7 +31,7 @@ To Create/Launch an EC2 instance refer page below.
 
 https://github.com/uthircloud/aws/blob/master/EC2/README.md
 
-When launching Redis cache in AWS by default it will run in port 6279.
+When launching Redis cache in AWS by default it will run in port 6379.
 
 ## 2. Create a Redis cache from Elasticcache
 
@@ -75,3 +75,38 @@ This can be done by configuring EC2 security group inbound rule to allow inbound
 To make this configuration edit your EC2 instance securitygroup configuration and configure port 6379 with access anywhere.
 
 ![Redis-Sec-grp](https://user-images.githubusercontent.com/50639924/66125232-6c93a480-e5b4-11e9-8a81-9a1121595eb1.PNG)
+
+Now we have to install redis-cleint or redis-clin in EC2 this to connect Redis from EC2 using commandline.
+To install it login to EC2 and run following commands in order.
+<B>
+sudo yum install gcc -y
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+rm -f redis-stable.tar.gz
+cd redis-stable
+sudo make
+sudo make install
+cd src
+</B>
+
+When you execute till above step you navigated to redis src folder.Now run below command to connect your redis instance.
+
+redis-cli -c -h <Your Redis instance address> -p 6379
+
+![RedisprimaryEndpoint](https://user-images.githubusercontent.com/50639924/66126027-6dc5d100-e5b6-11e9-911e-212e9c6ad23c.PNG)
+
+Execute below command (make sure you replace your redis instance address)
+
+<B>redis-cli -c -h myredis-cache.mbokrp.ng.0001.usw2.cache.amazonaws.com -p 6379</B>
+
+If everything successful you will be connected to Redis and you can see below 
+
+![Connected](https://user-images.githubusercontent.com/50639924/66126590-cfd30600-e5b7-11e9-8f2a-f16eaa40e895.PNG)
+
+To check further execute few Redis commands.
+
+set test myvalue
+get test
+flushall
+
+![Commands](https://user-images.githubusercontent.com/50639924/66126752-293b3500-e5b8-11e9-9453-17734e6b782f.PNG)
