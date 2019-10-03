@@ -29,5 +29,7 @@ To setup follow below steps.
 
 To Create/Launch an EC2 instance refer page below.
 
-[Create/Launch EC2 instance] (https://github.com/uthircloud/aws/blob/master/EC2/README.md)
+https://github.com/uthircloud/aws/blob/master/EC2/README.md
+
+When launching Redis cache in AWS by default it will run in port 6279.
 
