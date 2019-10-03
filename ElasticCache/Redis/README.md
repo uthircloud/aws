@@ -57,3 +57,9 @@ Choose Redis and give name of cache.
 
 <B>Make sure your selecting only t2 version of Node Type as indicated above to avoid any charges.</B>
 
+In Advanced Settings create a new SubNet group. In this step you can see your running EC2 instance VPCID choose the EC2 instance ID in which your running or conneting Redis. If your running only one EC2 instance that VPCID alone avalibale else multiple VPCID will be there you have to choose your VPCID from which you connect this Redis instance.
+
+
+![AdSe](https://user-images.githubusercontent.com/50639924/66124536-a5cb1500-e5b2-11e9-91f2-0b08e02348ad.PNG)
+
+Have all other default setting as is and click Create. It will take few minutes to create.
