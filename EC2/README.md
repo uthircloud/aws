@@ -90,11 +90,11 @@ Now navigate to <B>Connection->SSH->Auth</B> click Browse and refer your save .p
 
 If evrything is configured correctly it will prompt to open window. Click Yes and you will be getting connected to EC2.
 
-![OpenPrompt](https://user-images.githubusercontent.com/50639924/66121950-6ef20080-e5ac-11e9-80d0-1a4ed52fc4d1.PNG)
-
 Now all set to run any application on EC2.
 
-As a best practice always update your EC2 instance image for the first time when you connect.
+As a best practice always update your EC2 instance image for the first time when you connect.To update your EC2 image run below comment.
+
+<B>sudo yum update -y </B>
 
 
 
