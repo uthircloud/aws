@@ -96,5 +96,7 @@ As a best practice always update your EC2 instance image for the first time when
 
 <B>sudo yum update -y </B>
 
+From here on you can update anyother software which you want to run and run your application. For instance if you want to run java program update java using below command.
 
+<B>sudo yum install java-1.8.0 -y</B>
 
