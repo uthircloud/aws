@@ -134,3 +134,8 @@ So for the first hit you can see above logs when executing the same request thes
 
 If you connect Redis and clear all its cache using **flushall** command then hit the same request system will call backend for the first hit.
 
+## 5. Run application in EC2 and test Redis cache functionality
+
+To move the application to EC2 and run follow below link. Make sure your enabling/configuring correct security rule for your app port to be exposed from EC2.
+
+https://github.com/techgiants19/aws/tree/master/EC2/SpringBoot/signup
