@@ -39,14 +39,14 @@ CREATE TABLE UTHIRCLOUDADMIN.user_profile(
  
  </B>
  
-## Create Redis Elastic cache using AWS-Elasticcache
+## 2. Create Redis Elastic cache using AWS-Elasticcache
 
 To create Redis Elastic cache follow below link
 
 https://github.com/uthircloud/aws/tree/master/ElasticCache/Redis
 
 
-## Launch an EC2 instance and allow EC2 to connect Redis by changesing its security rule
+## 3. Launch an EC2 instance and allow EC2 to connect Redis by changesing its security rule
 
 To launch an EC2 instance follow below link.
 
@@ -58,3 +58,20 @@ This will enable your EC2 instance to connect Redis cluster which is running in 
 ![InboundRule](https://user-images.githubusercontent.com/50639924/66206303-b5636000-e67d-11e9-9773-2df684671c88.PNG)
 
 
+## 4. Create a Spring Boot application with Oracle DB and Redis implementation
+
+Refer manageprofile application for this use case. Make sure your configuring your respective RDS DB and Redsis cache credentials in **application.properties**
+
+server.port=8082
+server.servlet.context-path=/mangeprofile
+
+<B>
+#DB Config
+spring.datasource.url=jdbc:oracle:thin:@//<Your RDS DB Host>:1521/<DB Name>  
+spring.datasource.username=<DB UserName>  
+spring.datasource.password=<DB Password>  
+
+#Redis Cache Config  
+spring.redis.host=<Elastic Cache instance HostName>  
+spring.redis.port=6379  
+</B>
