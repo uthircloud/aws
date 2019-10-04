@@ -105,7 +105,8 @@ Include following dependencies in your **pom.xml**
 			      <artifactId>spring-boot-starter-web</artifactId>
 		    </dependency>
 
-We have to include **@EnableCaching** annotation to enable application to use Redis cache.
+
+Include **@EnableCaching** annotation to enable application to use Redis cache in main application class **ManageprofileApplication,java**.
 
     @SpringBootApplication(scanBasePackages={"com.learntech.teamtracker.manageprofile"})
     @EnableCaching
@@ -117,5 +118,19 @@ We have to include **@EnableCaching** annotation to enable application to use Re
 	   }
     }
     
- 
- 
+Include **@Cacheable(value="users",key="#emailId")** with redis cache map name and its key variable. This annotation makes that specific method call values will be stored in cache with given key. So for the first time only it will execute actual method implementation for other consecutive calls it will use cached value.
+
+In this example we are calling DB to get user profile info and this annotation will store that user object in Redis by creating a map named **users** and put an entry with key as **emailId**
+
+      @Override
+      @Cacheable(value="users",key="#emailId")
+	public UserProfile getUserProfileInfo(String emailId) throws Exception {
+		
+		logger.info("getUserProfileInfo() Starts");
+		logger.info("Fetching UserProfile from DB Starts");        Optional<com.learntech.teamtracker.manageprofile.entity.UserProfile> userProfileInfoOpt =                       userProfileRepository.findById(emailId);
+		logger.info("Fetching UserProfile from DB Completed");
+		
+So for the first hit you can see above logs when executing the same request these logs won't be getting printed.
+
+If you connect Redis and clear all its cache using **flushall** command then hit the same request system will call backend for the first hit.
+
