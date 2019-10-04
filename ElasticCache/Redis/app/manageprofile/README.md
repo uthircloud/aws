@@ -62,16 +62,18 @@ This will enable your EC2 instance to connect Redis cluster which is running in 
 
 Refer manageprofile application for this use case. Make sure your configuring your respective RDS DB and Redsis cache credentials in **application.properties**
 
-server.port=8082
-server.servlet.context-path=/mangeprofile
+server.port=8082  
+server.servlet.context-path=/mangeprofile  
 
 <B>
 #DB Config  
+ 
 spring.datasource.url=jdbc:oracle:thin:@//<Your RDS DB Host>:1521/<DB Name>  
 spring.datasource.username=<DB UserName>  
 spring.datasource.password=<DB Password>  
 
 #Redis Cache Config    
+
 spring.redis.host=<Elastic Cache instance HostName>    
 spring.redis.port=6379    
 </B>  
