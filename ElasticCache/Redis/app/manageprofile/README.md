@@ -77,3 +77,45 @@ spring.datasource.password=DB Password
 spring.redis.host=Elastic Cache instance HostName      
 spring.redis.port=6379      
 </B>  
+
+Include following dependencies in your **pom.xml**
+
+     <!--To Connect DB -->
+     <dependency>
+			     <groupId>org.springframework.boot</groupId>
+			     <artifactId>spring-boot-starter-data-jpa</artifactId>
+		   </dependency>
+		   <dependency>
+	    	   <groupId>com.oracle</groupId>
+	    	    <artifactId>ojdbc8</artifactId>
+	    	    <version>12.1.0.1</version>
+		    </dependency>
+      <!--To Connect Redis cache -->
+		    <dependency>
+		       <groupId>org.springframework.boot</groupId>
+		       <artifactId>spring-boot-starter-data-redis</artifactId>
+		    </dependency>
+		    <dependency>
+			      <groupId>redis.clients</groupId>
+			      <artifactId>jedis</artifactId>
+		    </dependency>
+      <!--To enable REST functionality -->
+		    <dependency>
+		      	<groupId>org.springframework.boot</groupId>
+			      <artifactId>spring-boot-starter-web</artifactId>
+		    </dependency>
+
+We have to include **@EnableCaching** annotation to enable application to use Redis cache.
+
+    @SpringBootApplication(scanBasePackages={"com.learntech.teamtracker.manageprofile"})
+    @EnableCaching
+    @EnableJpaRepositories(basePackages="com.learntech.teamtracker.manageprofile.repository")
+    public class ManageprofileApplication {
+
+	   public static void main(String[] args) {
+		  SpringApplication.run(ManageprofileApplication.class, args);
+	   }
+    }
+    
+ 
+ 
