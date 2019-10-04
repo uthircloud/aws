@@ -68,12 +68,12 @@ server.servlet.context-path=/mangeprofile
 <B>
 #DB Config  
  
-spring.datasource.url=jdbc:oracle:thin:@//<Your RDS DB Host>:1521/<DB Name>  
-spring.datasource.username=<DB UserName>  
-spring.datasource.password=<DB Password>  
+spring.datasource.url=jdbc:oracle:thin:@//Your RDS DB Host>:1521/DB Name    
+spring.datasource.username=DB UserName    
+spring.datasource.password=DB Password    
 
 #Redis Cache Config    
 
-spring.redis.host=<Elastic Cache instance HostName>    
-spring.redis.port=6379    
+spring.redis.host=Elastic Cache instance HostName      
+spring.redis.port=6379      
 </B>  
