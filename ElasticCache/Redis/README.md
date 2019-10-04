@@ -74,7 +74,7 @@ This can be done by configuring EC2 security group inbound rule to allow inbound
 
 To make this configuration edit your EC2 instance securitygroup configuration and configure port 6379 with access anywhere.
 
-![Redis-Sec-grp](https://user-images.githubusercontent.com/50639924/66125232-6c93a480-e5b4-11e9-8a81-9a1121595eb1.PNG)
+![InboundRule](https://user-images.githubusercontent.com/50639924/66206303-b5636000-e67d-11e9-9773-2df684671c88.PNG)
 
 Now we have to install redis-cleint or redis-clin in EC2 this to connect Redis from EC2 using commandline.
 To install it login to EC2 and run following commands in order.
