@@ -43,9 +43,9 @@ Regions -> Multiple AZ -> Multiple Data Centers
   - In this category services fully managed by AWS as consumer we will access this services using API' s or CLI and create our own apps using this abstraction services.
   - S3,Glacier,DynamoDB,Email Service (SES)
   
- Shared Responsiblity Model
+ **Shared Responsiblity Model**
  
- 1. Infrastructure Service
+ **1. Infrastructure Service**
  In a shared responsibility model consumer owns OS but AWS helps to bootstrap the initial access to OS.
  
  When launching EC2 use must be authenticated to Access the instance.
@@ -58,3 +58,12 @@ Regions -> Multiple AZ -> Multiple Data Centers
  - For Linux AMI's public key is stored in OS users's ~/.ssh/authorized_keys file.
  - For Windows using ec2config service it sets a new random admin password for the instance and encrypt using  AWS EC2 public key. Then user can use AWS conole or CLI tools by providing
    EC2 public key to decrypt the password.This password along with default admin account for EC2 instance can be used to access the instance.
+
+**2. Container Service**
+In container service OS and Infra will be responsibiity of AWS. Consumer is responsible for manging access to the services like defining Firewall rules and IAM user based access. 
+
+ - In case of RDS-Oracle DB is managed by AWS. User is responsible for controlling access to it using security rules and IAM policies and securing data like encrypting etc.
+ 
+ **3. Abstracted Service**
+ In abstracted services Infra layer,OS,Platform all managed by AWS. Consumer will accees this services using API endpoints or CLI tools.
+  - In case of S3 and DynamoDB user can control its access using IAM and ACL policies.Also data can be encrypted at rest and in transit.
