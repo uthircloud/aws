@@ -79,4 +79,21 @@ In container service OS and Infra will be responsibiity of AWS. Consumer is resp
    - MFA is enabled to account to provide 2FA
    
 
+AWS Account - Root Account will have all permission. Its best practice not to use Root Account. Instead create IAM users.
+IAM Users   - Under each Account we can create multiple users and provide different kind of access to each user.
+Groups      - We can group every users under a specific group's. For each groups we can attach different policies.
+Roles       - Roles are attched with policies which allows 3 types of access.
+              - Within same Account to access different AWS Resources. Ex from EC2 to S3 bucket.
+              - Corss Account Access
+              - Federated Identity Access. Using existing corporate user credntial to access AWS resources instead of creating  new IAM users.
+              
+**Policies**
+Policies are permissions or set of rules which define who is authorized to access specific AWS resources.
 
+**Resources Policy**
+
+Users will create Resources and define who will access thes resources by defining or attaching specific policies to the resources.
+
+**Capability Policy**
+
+Company wide polices which is attached to User or Group.
