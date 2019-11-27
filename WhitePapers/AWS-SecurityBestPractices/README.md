@@ -67,3 +67,16 @@ In container service OS and Infra will be responsibiity of AWS. Consumer is resp
  **3. Abstracted Service**
  In abstracted services Infra layer,OS,Platform all managed by AWS. Consumer will accees this services using API endpoints or CLI tools.
   - In case of S3 and DynamoDB user can control its access using IAM and ACL policies.Also data can be encrypted at rest and in transit.
+  
+ **AWS Trusted Advisor Tool**
+ 
+ AWS premium plan includes Trusted Adviosr tool which helps to identify security misconfigurations.
+ 
+ For instance in EC2 its will check
+   - Limited access to ports like SSH(22),TelNet(23),RDP(3389),VNC(5500)
+   - Limited access to common DB's MSSQL(1434),MySQL(3306),Oracle(1521),PostgreSQL(5432)
+   - IAM is configured to access to AWS services
+   - MFA is enabled to account to provide 2FA
+   
+
+
