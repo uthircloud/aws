@@ -130,4 +130,10 @@ An organization can have either single or multiple AWS account to manage AWS res
      - Once the key paris is created only public key is loaded in AWS. User will have to store Private Key and have to use it to connect EC2 instance.
      - When using AWS to create Key pairs both public and private keys are presented to user.
      - In case of Linux in AWS using Cloud-init service EC2 AMI is launched EC2 keypair is appended to initial OS user's ~/.ssh/authorized_keys file.
-      - In case of WINDOWS ec2config service will create new randowm password and user should use this along with public key.
+      - In case of WINDOWS ec2config service will create new random password and user should use this along with public key.
+
+**Storing and Managing Encryption Keys in the Cloud**
+    - In AWS while securing data using encryption Key can be managed by eith by User themself or can use AWS provided AWSCloudHSM (Hardware Security Model). While using this methods this keys can be accessed through highly secure channels like IPSecVPN,VPC or AWS Direct Connect.
+    - When a user signup for AWSHSM for Key management an AWSCloudHSM appliance is tagged to users VPC. It's users responsibility to manage Cryptographic domain of the AWSCloudHSM. It's a logical spce to manage Keys.
+    - AWS only responsible for managing health of the appliance. By which AWS don't have any control over user's key.
+    
