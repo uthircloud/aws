@@ -116,6 +116,6 @@ An organization can have either single or multiple AWS account to manage AWS res
     
 **IAM Roles**
     - IAM roles are used for below given 3 different purposes.
-       - To give/control access to different AWS resources. Ex an EC2 instance to connect S3 bucket.
-       - To give access to cross account access of AWS resources.
-       - Identity federation. Ex In a corporate environment users will have identy already like LDAP we can use same idnetity to control AWS resources.
+    - To give/control access to different AWS resources. Ex an EC2 instance to connect S3 bucket.
+    - To give access to cross account access of AWS resources.
+    - Identity federation. Ex In a corporate environment users will have identy already like LDAP we can use same idnetity to control AWS resources.
