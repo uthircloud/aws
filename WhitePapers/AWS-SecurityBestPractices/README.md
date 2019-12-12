@@ -98,6 +98,8 @@ Users will create Resources and define who will access thes resources by definin
 
 Company wide polices which is attached to User or Group.
 
+Both **Resources Policy** and **Capability Policy** are cumulative in nature. An usere permission to specific AWS resource is cumulative of this two policies.
+
 **Manage AWS Accounts,IAM Users,Groups,Roles**
 
 *AWS Accounts*
