@@ -134,7 +134,7 @@ An organization can have either single or multiple AWS account to manage AWS res
 
 **Storing and Managing Encryption Keys in the Cloud**
 
-    - In AWS while securing data using encryption Key can be managed by eith by User themself or can use AWS provided AWSCloudHSM (Hardware Security Model). While using this methods this keys can be accessed through highly secure channels like IPSecVPN,VPC or AWS Direct Connect.
-    - When a user signup for AWSHSM for Key management an AWSCloudHSM appliance is tagged to users VPC. It's users responsibility to manage Cryptographic domain of the AWSCloudHSM. It's a logical spce to manage Keys.
-    - AWS only responsible for managing health of the appliance. By which AWS don't have any control over user's key.
+    - In AWS while securing data using encryption Key can be managed by eith by User themself or can use AWS provided AWSCloudHSM (Hardware Security Model). While using this methods this keys can be accessed through highly secure channels like IPSecVPN,VPC or AWS Direct Connect
+    - When a user signup for AWSHSM for Key management an AWSCloudHSM appliance is tagged to users VPC. It's users responsibility to manage Cryptographic domain of the AWSCloudHSM. It's a logical spce to manage Keys
+    - AWS only responsible for managing health of the appliance. By which AWS don't have any control over user's key
     
