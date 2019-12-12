@@ -97,3 +97,25 @@ Users will create Resources and define who will access thes resources by definin
 **Capability Policy**
 
 Company wide polices which is attached to User or Group.
+
+**Manage AWS Accounts,IAM Users,Groups,Roles**
+
+*AWS Accounts*
+
+An organization can have either single or multiple AWS account to manage AWS resources.
+  - A single AWS account for all regiongs like DEV,TEST,PROD
+  - Multiple AWS account for different departments in a single organization
+  - Each account will have a root user which is have all the privillages. But as a best practice its advisable to create IAM user under a account and use it for day today activites.
+  
+**IAM User**
+   - We can create different IAM users based on their activites. Ex Developers needs specific set of accesses compare to Testers
+   - We can create respective IAM users and specify their access privillages by attaching corresponding polices.
+   
+**IAM Groups**
+    - Groups will consist of collective users. Ideally we will group different users in a single group and each group is have predefined policies attached to it. All users in the group will inherit all the policies specific to that group.
+    
+**IAM Roles**
+    - IAM roles are used for below given 3 different purposes.
+       - To give/control access to different AWS resources. Ex an EC2 instance to connect S3 bucket.
+       - To give access to cross account access of AWS resources.
+       - Identity federation. Ex In a corporate environment users will have identy already like LDAP we can use same idnetity to control AWS resources.
