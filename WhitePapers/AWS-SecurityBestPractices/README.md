@@ -121,6 +121,8 @@ An organization can have either single or multiple AWS account to manage AWS res
     - Identity federation. Ex In a corporate environment users will have identy already like LDAP we can use same idnetity to control AWS resources.
     
 **Mange OS level Access to EC2 instance**
+
+
      -  To access OS of EC2 instance we need different set of credentials. In AWS this can be done using AWS security key pairs (asymetric key pairs).
      - These keypairs can be created different ways using different industry standards using tool like OpenSSL.
      - Once the key paris is created only public key is loaded in AWS. User will have to store Private Key and have to use it to connect EC2 instance.
