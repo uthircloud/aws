@@ -142,13 +142,18 @@ An organization can have either single or multiple AWS account to manage AWS res
 
   **Permissions** 
      - Along with IAM user level authentication access S3 will provide object level permission to who can access which objects.
+     
   **Versioning**
      - S3 versioning feature diabled by default. By enabling it we can keep the history of the changes from hard delete.
+     
   **Replication** 
      - S3 will replicate all objects across all AZ's. This will help to aviod data loss in case of one AZ is down.But replication won't guarantee accidental deletion of objects.
+     
   **Backup**
      - S3 will support backup of data in the form of Versioning and Replication.
+     
  **Encryption–serverside**
      - S3 will support server-side encyption of data.
+     
  **Encryption–clientside**
      - S3 will support client side encryption in which users will control encryption/decryption of data also management of the keys. 
