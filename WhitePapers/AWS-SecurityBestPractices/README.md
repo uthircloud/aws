@@ -156,4 +156,25 @@ An organization can have either single or multiple AWS account to manage AWS res
      - S3 will support server-side encyption of data.
      
  **Encryption–clientside**
-     - S3 will support client side encryption in which users will control encryption/decryption of data also management of the keys. 
+     - S3 will support client side encryption in which users will control encryption/decryption of data also management of the keys.
+     
+**Protecting Data at Rest on Amazon EBS**
+ 
+In AWS EBS we have various options to encrypt data at rest. As in EBS data is stored as file system.
+
+  **Replication**
+       
+       - EBS will create 2 copies of EBS volume for redudencies. But both copies will reside in same AZ.
+      
+  **Backup**
+  
+       - EBS can provide snapshot of data at any point of data which is stored in EBS. With this option we can revcover data loss due to hardware failure.
+       
+  **Encrypt-Windows**
+  
+       - In windows while using EBS we can encrypt data in EBS using EFS (Encrypt file System),BitLocker.
+       
+  **Encrypt-Linux**
+  
+       - In linux using dm-crypt,True-crypt and SafeNet-ProtectV thrid offerings will support data encryption.
+    
