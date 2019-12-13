@@ -139,6 +139,7 @@ An organization can have either single or multiple AWS account to manage AWS res
     - AWS only responsible for managing health of the appliance. By which AWS don't have any control over user's key
     
 **Protecting Data at Rest on Amazon S3**
+
   **Permissions** 
      - Along with IAM user level authentication access S3 will provide object level permission to who can access which objects.
   **Versioning**
