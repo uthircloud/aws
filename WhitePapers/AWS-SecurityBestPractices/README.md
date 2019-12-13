@@ -177,4 +177,11 @@ In AWS EBS we have various options to encrypt data at rest. As in EBS data is st
   **Encrypt-Linux**
   
        - In linux using dm-crypt,True-crypt and SafeNet-ProtectV thrid offerings will support data encryption.
-    
+       
+**Protecting Data at Rest on Amazon RDS**
+
+   - AWS RDS will support data encryption at rest and in transit. At rest encryption can be done either in application-layer or at the platform layer.
+   
+   - At the application layer consumer has to provide/implement encryption and manage the keys.
+   
+   - At platform level we can use SQL cryptographic functions to encrypt the data.While doing so one dis advantage is we can't use wild card search queries if the data is encrypted and stored.
