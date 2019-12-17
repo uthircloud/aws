@@ -185,3 +185,39 @@ In AWS EBS we have various options to encrypt data at rest. As in EBS data is st
    - At the application layer consumer has to provide/implement encryption and manage the keys.
    
    - At platform level we can use SQL cryptographic functions to encrypt the data.While doing so one dis advantage is we can't use wild card search queries if the data is encrypted and stored.
+   
+**Protecting Data at Rest on Amazon DynamoDB**
+
+ - When storing Encrypted fields in DyamoDB its best practice to use raw Binary fileds or Base-64 encoded String fields.
+ 
+**Protect Data in Transit**
+  
+  - AWS services will support both **IPSec** and **SSL/TLS** protection of data in transit.
+  
+  - IP Sec is a protocal which extends IP protocal stack.Allows application on above network layer to communicate without any change.
+  
+  - SSL/TLS will operate on session layer.
+  
+Approaches to protect data in Transit
+
+  - Always use HTTPS with server side authentication for web HTTP based traffic.
+  
+  - Offload HTTPS processing Elastic Load Balancing to mimimizing impact on webservers.
+  
+  - Windows server in AWS will support RDP which by default support HTTPS. RDP will come up with Selfsigned certificate. But as  best practice its advisable to use trusted X.509 certificate to avoid identity spoofing and man in middle attack.
+  
+  - Use SSH v2 using non-privilaged user accounts.
+  
+  - Use DBs with SSL/TLS communication for securing data transfer.
+  
+**Protecting Data in Transit when Managing AWS Services**
+
+  - When using AWS management console we can protect communication between Client Browser and AWS service enpoint communication as it will alywas HTTPS traffic.
+  
+  - Also we can protect communication between AWS services uing REST API's of those services using HTTPS.
+  
+**Protecting Data in Transit to Amazon S3**
+  
+   - All connection between AWS is using HTTPS using SSL/TLS.
+  
+
