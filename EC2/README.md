@@ -100,3 +100,25 @@ From here on you can update anyother software which you want to run and run your
 
 <B>sudo yum install java-1.8.0 -y</B>
 
+**Create an EC2 instance using Cloud Formation**
+
+**YAML**
+
+EC2-Instance-Serer:
+Type: AWS::EC2::Instance
+Properties: 
+  AvailabilityZone: us-east-1b
+  ImageId: ami-00068cd7555f543d5
+  InstanceType: t2.micro
+  SecurityGroups: 
+    - !Ref EC2-Security-Group
+   
+EC2-Security-Group:   
+Type: AWS::EC2::SecurityGroup
+Properties: 
+  GroupDescription: EC2-Security Group defines rules for inbound and outbound
+  GroupName: ec2-server-security-group
+  SecurityGroupEgress: 
+    - FromPort: 65.27.244.128/32
+    - IpProtocol: tcp
+    - ToPort: 22
